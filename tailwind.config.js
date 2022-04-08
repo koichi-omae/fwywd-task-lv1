@@ -44,7 +44,11 @@ module.exports = {
       xl: '2.5rem',
       '2xl': '3rem',
     },
-    extend: {},
+    extend: {
+      backgroundImage: (theme) => ({
+        'hero1-pattern': "url('/img/Hero1.png')",
+      }),
+    },
   },
   plugins: [],
 };
