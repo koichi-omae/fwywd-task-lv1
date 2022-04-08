@@ -47,6 +47,7 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         'hero1-pattern': "url('/img/Hero1.png')",
+        'benefit-pattern': "url('/img/benefit-bg.png')",
       }),
     },
   },
