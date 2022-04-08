@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-interface IconProps {
+export interface IconProps {
   src: StaticImageData;
   alt: string;
   width: number;
