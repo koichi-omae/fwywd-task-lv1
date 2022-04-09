@@ -1,6 +1,6 @@
-import { Hero1Props } from '.';
+import { HeroProps } from '.';
 
-export const storyList: { [key: string]: Hero1Props } = {
+export const storyList: { [key: string]: HeroProps } = {
   default: {
     title: '良心ある自己実現ができる世界へ',
     text: '貢献が正しく評価される仕組みを創る',

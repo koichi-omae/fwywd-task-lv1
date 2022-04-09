@@ -1,6 +1,6 @@
 import React from 'react';
 
-export interface Hero1Props {
+export interface HeroProps {
   title: string;
   text: string;
   button: {
@@ -12,7 +12,7 @@ export interface Hero1Props {
   };
 }
 
-export const Hero1: React.FC<Hero1Props> = ({ title, text, button }) => (
+export const Hero: React.FC<HeroProps> = ({ title, text, button }) => (
   <div className='flex h-[800px] items-center bg-hero1-pattern bg-cover text-center'>
     <div className='w-1/2 px-10'>
       <h2 className='text-left text-[4rem] font-bold text-gray-900'>{title}</h2>
