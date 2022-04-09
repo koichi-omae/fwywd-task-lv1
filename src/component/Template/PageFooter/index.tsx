@@ -30,7 +30,7 @@ export const PageFooter: React.FC<PageFooterProps> = ({ logo, title, sns, menuNa
           {sns.icons.map((icon, index) => (
             <div
               key={index}
-              className='mr-5 flex h-[60px] w-[60px] items-center justify-center rounded-lg bg-white'
+              className='mr-5 flex h-[60px] w-[60px] items-center justify-center rounded-lg bg-white hover:cursor-pointer hover:opacity-70'
             >
               <Icon {...icon} />
             </div>
@@ -46,7 +46,7 @@ export const PageFooter: React.FC<PageFooterProps> = ({ logo, title, sns, menuNa
           </h3>
           <div className='mt-5'>
             {nav.menu.map((m, index) => (
-              <p key={index} className='text-base text-white '>
+              <p key={index} className='text-base text-white hover:cursor-pointer hover:opacity-70'>
                 {m}
               </p>
             ))}
