@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-interface LogoProps {
+export interface LogoProps {
   src: StaticImageData;
   alt: string;
   width: number;

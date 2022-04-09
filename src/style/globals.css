@@ -73,3 +73,11 @@
 .white-2xl {
   @apply text-2xl font-bold text-white;
 }
+
+.btn-green {
+  @apply rounded-md bg-gradient-to-r from-primary-800 to-primary-500 py-5 px-12 text-base text-white hover:opacity-70;
+}
+
+.btn-yellow {
+  @apply rounded-md bg-gradient-to-r from-[#F2994A] to-[#F2C94C] py-5 px-12 text-base text-white hover:opacity-70;
+}
