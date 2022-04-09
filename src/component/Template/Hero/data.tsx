@@ -9,7 +9,7 @@ export const storyList: { [key: string]: HeroProps } = {
       subtitle1: '＼現在',
       subtitle2: '名がダウンロード／',
       people: '100',
-      link: '',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSflSSih9XSE5RHXQQnhMoQb2u3dkmcaNe7pPkYm56h90QKVlw/viewform',
     },
   },
 };

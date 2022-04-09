@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 export interface HeroProps {
@@ -23,7 +24,9 @@ export const Hero: React.FC<HeroProps> = ({ title, text, button }) => (
           <span className='text-lg'>{button.people}</span>
           {button.subtitle2}
         </p>
-        <button className='btn-yellow white-base'>{button.title}</button>
+        <Link href={button.link} passHref>
+          <button className='btn-yellow white-base'>{button.title}</button>
+        </Link>
       </div>
     </div>
   </div>
