@@ -29,7 +29,7 @@ export const storyList: { [key: string]: PageFooterProps } = {
     menuNav: [
       { title: 'About', menu: ['悩み', '解決策', '料金'] },
       { title: 'Legal', menu: ['利用規約', 'プライバシーポリシー', '特記法表記', '運営会社'] },
-      { title: 'About', menu: ['メディアキット', 'サイトマップ'] },
+      { title: 'Links', menu: ['メディアキット', 'サイトマップ'] },
     ],
   },
 };
