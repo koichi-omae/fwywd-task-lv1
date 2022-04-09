@@ -26,9 +26,7 @@ interface BenefitCardProps {
 export const Benefit: React.FC<BenefitProps> = ({ title, result, cards, message }) => (
   <div id='解決策' className='bg-covers bg-benefit-pattern py-40'>
     <div className='mb-12 text-center'>
-      <h2 className='inline-block border-b-4 border-b-[#F2C94C] text-lg font-bold text-primary-800'>
-        {title}
-      </h2>
+      <h2 className='underline-lg inline-block border-b-4'>{title}</h2>
     </div>
     <p className='primary-2xl mb-12 text-center'>{result}</p>
     <div className='flex justify-center gap-12'>
@@ -47,9 +45,7 @@ export const Benefit: React.FC<BenefitProps> = ({ title, result, cards, message 
               className='rotate-90'
             />
           </div>
-          <p className='inline-block border-b-4 border-b-[#F2C94C] text-lg font-bold text-primary-800'>
-            {card.result}
-          </p>
+          <p className='underline-lg inline-block'>{card.result}</p>
           <div className='my-6'>
             <Icon {...card.image} />
           </div>
