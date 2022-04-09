@@ -45,7 +45,7 @@ export const Pricing: React.FC<PricingProps> = ({
   cards,
   checklist,
 }) => (
-  <div className='bg-primary-50 py-12 text-center'>
+  <div id='料金' className='bg-primary-50 py-12 text-center'>
     <div className='container mx-auto'>
       <h2 className='primary-2xl mb-3'>{title}</h2>
       <p className='primary-base mb-12'>{text}</p>

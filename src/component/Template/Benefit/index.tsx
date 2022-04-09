@@ -24,7 +24,7 @@ interface BenefitCardProps {
 }
 
 export const Benefit: React.FC<BenefitProps> = ({ title, result, cards, message }) => (
-  <div className='bg-covers bg-benefit-pattern py-40'>
+  <div id='解決策' className='bg-covers bg-benefit-pattern py-40'>
     <div className='mb-12 text-center'>
       <h2 className='inline-block border-b-4 border-b-[#F2C94C] text-lg font-bold text-primary-800'>
         {title}

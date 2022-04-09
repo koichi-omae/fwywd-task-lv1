@@ -23,7 +23,7 @@ interface CardProps {
 }
 
 export const Sympathy: React.FC<SympathyProps> = ({ title, checklist, cards }) => (
-  <div className=' bg-primary-50 py-36'>
+  <div id='悩み' className='bg-primary-50 py-36'>
     <div className='grid justify-items-center text-center '>
       <h2 className=' mb-12 inline-block border-b-4 border-b-[#F2C94C] text-xl font-bold text-primary-800'>
         {title}
