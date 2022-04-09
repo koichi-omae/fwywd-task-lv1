@@ -12,7 +12,7 @@ export const storyList: { [key: string]: PageHeaderProps } = {
     headerList: ['Top', '悩み', '解決策', '料金'],
     button: {
       text: '資料ダウンロード',
-      link: '',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSflSSih9XSE5RHXQQnhMoQb2u3dkmcaNe7pPkYm56h90QKVlw/viewform',
     },
   },
 };

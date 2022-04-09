@@ -24,5 +24,4 @@ const Home: React.FC = () => (
     <PageFooter {...PageFooterData.default} />
   </>
 );
-
 export default Home;
