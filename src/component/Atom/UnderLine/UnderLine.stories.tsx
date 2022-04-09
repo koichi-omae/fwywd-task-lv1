@@ -12,54 +12,30 @@ const Template: ComponentStory<typeof UnderLine> = (args) => <UnderLine {...args
 
 export const ExtraSmall = Template.bind({});
 ExtraSmall.args = {
-  children: (
-    <span className='border-b-4 border-b-[#F2C94C] text-xs font-bold text-primary-800'>
-      Text-xs
-    </span>
-  ),
+  children: <span className='underline-xs'>Text-xs</span>,
 };
 
 export const Small = Template.bind({});
 Small.args = {
-  children: (
-    <span className='border-b-4 border-b-[#F2C94C] text-sm font-bold text-primary-800'>
-      Text-xs
-    </span>
-  ),
+  children: <span className='underline-sm'>Text-sm</span>,
 };
 
 export const Base = Template.bind({});
 Base.args = {
-  children: (
-    <span className='border-b-4 border-b-[#F2C94C] text-base font-bold text-primary-800'>
-      Text-xs
-    </span>
-  ),
+  children: <span className='underline-base'>Text-base</span>,
 };
 
 export const Large = Template.bind({});
 Large.args = {
-  children: (
-    <span className='border-b-4 border-b-[#F2C94C] text-lg font-bold text-primary-800'>
-      Text-xs
-    </span>
-  ),
+  children: <span className='underline-lg'>Text-lg</span>,
 };
 
 export const ExtraLarge = Template.bind({});
 ExtraLarge.args = {
-  children: (
-    <span className='border-b-4 border-b-[#F2C94C] text-xl font-bold text-primary-800'>
-      Text-xs
-    </span>
-  ),
+  children: <span className='underline-xl'>Text-xl</span>,
 };
 
 export const ExtraLarge2 = Template.bind({});
 ExtraLarge2.args = {
-  children: (
-    <span className='border-b-4 border-b-[#F2C94C] text-2xl font-bold text-primary-800'>
-      Text-xs
-    </span>
-  ),
+  children: <span className='underline-2xl'>Text-2xl</span>,
 };

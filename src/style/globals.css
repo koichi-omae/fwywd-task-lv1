@@ -81,3 +81,27 @@
 .btn-yellow {
   @apply rounded-md bg-gradient-to-r from-[#F2994A] to-[#F2C94C] py-5 px-12 text-base text-white hover:opacity-70;
 }
+
+.underline-xs {
+  @apply border-b-4 border-b-[#F2C94C] text-xs font-bold text-primary-800;
+}
+
+.underline-sm {
+  @apply border-b-4 border-b-[#F2C94C] text-sm font-bold text-primary-800;
+}
+
+.underline-base {
+  @apply border-b-4 border-b-[#F2C94C] text-base font-bold text-primary-800;
+}
+
+.underline-lg {
+  @apply border-b-4 border-b-[#F2C94C] text-lg font-bold text-primary-800;
+}
+
+.underline-xl {
+  @apply border-b-4 border-b-[#F2C94C] text-xl font-bold text-primary-800;
+}
+
+.underline-2xl {
+  @apply border-b-4 border-b-[#F2C94C] text-2xl font-bold text-primary-800;
+}

@@ -18,27 +18,27 @@ PrimaryExtraSmall.args = {
 
 export const PrimarySmall = Template.bind({});
 PrimarySmall.args = {
-  children: <span className='primary-sm'>Text-xs</span>,
+  children: <span className='primary-sm'>Text-sm</span>,
 };
 
 export const PrimaryBase = Template.bind({});
 PrimaryBase.args = {
-  children: <span className='primary-base'>Text-xs</span>,
+  children: <span className='primary-base'>Text-base</span>,
 };
 
 export const PrimaryLarge = Template.bind({});
 PrimaryLarge.args = {
-  children: <span className='primary-lg'>Text-xs</span>,
+  children: <span className='primary-lg'>Text-lg</span>,
 };
 
 export const PrimaryExtraLarge = Template.bind({});
 PrimaryExtraLarge.args = {
-  children: <span className='primary-xl'>Text-xs</span>,
+  children: <span className='primary-xl'>Text-xl</span>,
 };
 
 export const PrimaryExtraLarge2 = Template.bind({});
 PrimaryExtraLarge2.args = {
-  children: <span className='primary-2xl'>Text-xs</span>,
+  children: <span className='primary-2xl'>Text-2xl</span>,
 };
 
 //Gray Text
@@ -49,27 +49,27 @@ GrayExtraSmall.args = {
 
 export const GraySmall = Template.bind({});
 GraySmall.args = {
-  children: <span className='gray-sm'>Text-xs</span>,
+  children: <span className='gray-sm'>Text-sm</span>,
 };
 
 export const GrayBase = Template.bind({});
 GrayBase.args = {
-  children: <span className='gray-base'>Text-xs</span>,
+  children: <span className='gray-base'>Text-base</span>,
 };
 
 export const GrayLarge = Template.bind({});
 GrayLarge.args = {
-  children: <span className='gray-lg'>Text-xs</span>,
+  children: <span className='gray-lg'>Text-lg</span>,
 };
 
 export const GrayExtraLarge = Template.bind({});
 GrayExtraLarge.args = {
-  children: <span className='gray-xl'>Text-xs</span>,
+  children: <span className='gray-xl'>Text-xl</span>,
 };
 
 export const GrayExtraLarge2 = Template.bind({});
 GrayExtraLarge2.args = {
-  children: <span className='gray-2xl'>Text-xs</span>,
+  children: <span className='gray-2xl'>Text-2xl</span>,
 };
 
 //white Text
@@ -80,25 +80,25 @@ WhiteExtraSmall.args = {
 
 export const WhiteSmall = Template.bind({});
 WhiteSmall.args = {
-  children: <span className='white-sm'>Text-xs</span>,
+  children: <span className='white-sm'>Text-sm</span>,
 };
 
 export const WhiteBase = Template.bind({});
 WhiteBase.args = {
-  children: <span className='white-base'>Text-xs</span>,
+  children: <span className='white-base'>Text-base</span>,
 };
 
 export const WhiteLarge = Template.bind({});
 WhiteLarge.args = {
-  children: <span className='white-lg'>Text-xs</span>,
+  children: <span className='white-lg'>Text-lg</span>,
 };
 
 export const WhiteExtraLarge = Template.bind({});
 WhiteExtraLarge.args = {
-  children: <span className='white-xl'>Text-xs</span>,
+  children: <span className='white-xl'>Text-xl</span>,
 };
 
 export const WhiteExtraLarge2 = Template.bind({});
 WhiteExtraLarge2.args = {
-  children: <span className='white-2xl'>Text-xs</span>,
+  children: <span className='white-2xl'>Text-2xl</span>,
 };

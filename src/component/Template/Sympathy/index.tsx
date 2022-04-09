@@ -25,9 +25,7 @@ interface CardProps {
 export const Sympathy: React.FC<SympathyProps> = ({ title, checklist, cards }) => (
   <div id='悩み' className='bg-primary-50 py-36'>
     <div className='grid justify-items-center text-center '>
-      <h2 className=' mb-12 inline-block border-b-4 border-b-[#F2C94C] text-xl font-bold text-primary-800'>
-        {title}
-      </h2>
+      <h2 className=' underline-xl mb-12 inline-block'>{title}</h2>
       <div className='mr-16'>
         {checklist.map((check, index) => (
           <div key={index} className='mb-3 flex items-center'>
@@ -47,7 +45,7 @@ export const Sympathy: React.FC<SympathyProps> = ({ title, checklist, cards }) =
         >
           <span className='white-sm absolute bg-primary-800 px-5 py-1'>{card.tag}</span>
           <div className='my-16 text-center'>
-            <h3 className='inline-block border-b-4 border-b-[#F2C94C] text-center text-base font-bold text-primary-800'>
+            <h3 className='underline-base inline-block border-b-4'>
               <span className='text-lg'>{card.title.title1}</span>
               {card.title.title2}
             </h3>

@@ -54,7 +54,7 @@ export const Pricing: React.FC<PricingProps> = ({
         {cards.map((card, index) => (
           <div
             key={index}
-            className='w-[410px] rounded-md bg-white py-12 px-3 font-bold text-primary-800 hover:bg-primary-800 hover:text-white'
+            className='w-[410px] rounded-md bg-white py-12 px-3 font-bold text-primary-800 hover:cursor-pointer hover:bg-primary-800 hover:text-white'
           >
             <h3 className='mb-3 text-[2.25rem] font-bold '>
               {card.title}
