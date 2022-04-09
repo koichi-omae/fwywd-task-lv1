@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Script from 'next/script';
 import React from 'react';
 import useSWR from 'swr';
 export interface HeroProps {
@@ -21,28 +20,39 @@ export const Hero: React.FC<HeroProps> = ({ title, text, button }) => {
     fetcher,
   );
   if (error) return <div>failed to load</div>;
-  if (!data) return <div>loading...</div>;
-
-  return (
-    <>
-      <Script src='https://unpkg.com/stein-js-client'></Script>
+  if (!data)
+    return (
       <div className='flex h-[800px] items-center bg-hero1-pattern bg-cover text-center'>
         <p></p>
         <div className='w-1/2 px-10'>
           <h2 className='text-left text-[4rem] font-bold text-gray-900'>{title}</h2>
           <p className='mb-24 mt-8 text-left text-lg font-bold text-gray-900'>{text}</p>
           <div className='text-left'>
-            <p className='text-sm font-bold text-[#F7A60F]'>
-              {button.subtitle1}
-              <span className='text-lg'>{data.length}</span>
-              {button.subtitle2}
-            </p>
             <Link href={button.link} passHref>
               <button className='btn-yellow white-base'>{button.title}</button>
             </Link>
           </div>
         </div>
       </div>
-    </>
+    );
+
+  return (
+    <div className='flex h-[800px] items-center bg-hero1-pattern bg-cover text-center'>
+      <p></p>
+      <div className='w-1/2 px-10'>
+        <h2 className='text-left text-[4rem] font-bold text-gray-900'>{title}</h2>
+        <p className='mb-24 mt-8 text-left text-lg font-bold text-gray-900'>{text}</p>
+        <div className='text-left'>
+          <p className='text-sm font-bold text-[#F7A60F]'>
+            {button.subtitle1}
+            <span className='text-lg'>{data.length}</span>
+            {button.subtitle2}
+          </p>
+          <Link href={button.link} passHref>
+            <button className='btn-yellow white-base'>{button.title}</button>
+          </Link>
+        </div>
+      </div>
+    </div>
   );
 };
