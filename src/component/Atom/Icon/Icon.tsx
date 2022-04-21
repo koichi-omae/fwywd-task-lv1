@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import ArrowImage from '~/img/Arrow.png';
+// import ArrowImage from '~/img/Arrow.png';
 import CheckImage from '~/img/Check.png';
 import FacebookImage from '~/img/Facebook.png';
 import HatebuImage from '~/img/Hatebu.png';
@@ -29,7 +29,7 @@ export const Icon: React.FC<IconProps> = ({ type, width = 30, height = 30 }) => 
     case 'logo':
       return <Image alt={type} src={LogoImage} width={width} height={height} />;
     case 'arrow':
-      return <Image alt={type} src={ArrowImage} width={width} height={height} />;
+      return <Image alt={type} src='/img/Arrow.png' width={width} height={height} />;
     case 'check':
       return <Image alt={type} src={CheckImage} width={width} height={height} />;
     case 'notCheck':
