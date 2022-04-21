@@ -1,14 +1,10 @@
 import React from 'react';
-import { Icon, IconProps } from '@/component/Atom/Icon/Icon';
-import { Logo, LogoProps } from '@/component/Atom/Logo/Logo';
+import { Icon, IconProps } from '@/component/atom/Icon';
 
 export interface PageFooterProps {
-  logo: LogoProps;
   title: string;
-  sns: {
-    icons: IconProps[];
-    share: string;
-  };
+  icons: IconProps[];
+  share: string;
   menuNav: MenuProps[];
 }
 
@@ -17,17 +13,17 @@ interface MenuProps {
   menu: string[];
 }
 
-export const PageFooter: React.FC<PageFooterProps> = ({ logo, title, sns, menuNav }) => (
+export const PageFooter: React.FC<PageFooterProps> = ({ title, icons, share, menuNav }) => (
   <footer className='bg-primary-800'>
     <div className='mx-8 flex items-center justify-between border-b-2 border-white pt-16 pb-8'>
       <div>
-        <Logo {...logo} />
+        <Icon type='logo' width={156} height={60} />
       </div>
       <p className='white-base'>{title}</p>
       <div className=''>
-        <p className='mb-6 text-center text-base text-white'>{sns.share}</p>
+        <p className='mb-6 text-center text-base text-white'>{share}</p>
         <div className='flex'>
-          {sns.icons.map((icon, index) => (
+          {icons.map((icon, index) => (
             <div
               key={index}
               className='mr-5 flex h-[60px] w-[60px] items-center justify-center rounded-lg bg-white hover:cursor-pointer hover:opacity-70'
