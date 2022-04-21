@@ -17,3 +17,11 @@
 .highlight {
   @apply border-b-4 border-b-yellow;
 }
+
+.tag {
+  @apply px-5 py-1;
+}
+
+.tag-green {
+  @apply text-sm font-bold text-white;
+}

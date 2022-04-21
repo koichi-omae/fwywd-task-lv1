@@ -1,3 +1,5 @@
-import React from 'react';
+export interface TagProps {
+  children: React.ReactNode;
+}
 
-export const Tag: React.FC = ({ children }) => <>{children}</>;
+export const Tag: React.FC<TagProps> = ({ children }) => <>{children}</>;
