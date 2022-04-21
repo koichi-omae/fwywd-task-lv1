@@ -8,8 +8,8 @@ export default {
 
 const Template: Story<IconProps> = (args) => <Icon {...args} />;
 
-export const Default = Template.bind({});
-Default.args = {};
+export const Logo = Template.bind({});
+Logo.args = { type: 'logo', width: 156, height: 60 };
 
 export const Arrow = Template.bind({});
 Arrow.args = {
