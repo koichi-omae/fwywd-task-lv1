@@ -1,5 +1,5 @@
-import React from 'react';
-import { Icon, IconProps } from '@/component/Atom/Icon/Icon';
+import Image, { ImageProps } from 'next/image';
+import { Icon, IconProps } from '@/component/atom/Icon';
 
 export interface SympathyProps {
   title: string;
@@ -18,7 +18,7 @@ interface CardProps {
     title1: string;
     title2: string;
   };
-  icon: IconProps;
+  image: ImageProps;
   text: string;
 }
 
@@ -51,7 +51,7 @@ export const Sympathy: React.FC<SympathyProps> = ({ title, checklist, cards }) =
             </h3>
           </div>
           <div className='text-center'>
-            <Icon {...card.icon} />
+            <Image {...card.image} />
           </div>
           <p className='primary-base px-14 py-12 text-center'>{card.text}</p>
         </div>

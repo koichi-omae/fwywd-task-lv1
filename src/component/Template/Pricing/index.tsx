@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon, IconProps } from '@/component/Atom/Icon/Icon';
+import { Icon, IconProps } from '@/component/atom/Icon';
 
 export interface PricingProps {
   title: string;
@@ -82,7 +82,7 @@ export const Pricing: React.FC<PricingProps> = ({
             </p>
             <div className='border-b-4 border-primary-200 py-8'>
               {card.courses.map((course, index) => {
-                if (course.icon.alt === 'notcheck') {
+                if (course.icon.type === 'notCheck') {
                   return (
                     <div key={index} className=' block text-center opacity-50'>
                       <div className='flex items-center justify-center'>
@@ -109,7 +109,7 @@ export const Pricing: React.FC<PricingProps> = ({
             </div>
             <div className='mt-8'>
               {card.onlines.map((online, index) => {
-                if (online.icon.alt === 'notcheck') {
+                if (online.icon.type === 'notCheck') {
                   return (
                     <div key={index} className=' block text-center opacity-50'>
                       <div className='flex items-center justify-center'>
@@ -141,9 +141,7 @@ export const Pricing: React.FC<PricingProps> = ({
         {checklist.map((check, index) => (
           <div key={index}>
             <div className='flex items-center'>
-              <div>
-                <Icon {...check.icon} />
-              </div>
+              <div>{/* <Icon {...check.icon} /> */}</div>
               <p className='primary-base'>{check.text}</p>
             </div>
           </div>

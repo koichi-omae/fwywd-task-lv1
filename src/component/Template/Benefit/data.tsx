@@ -1,8 +1,8 @@
 import { BenefitProps } from '.';
 
-import Arrow from '~/img/Arrow.png';
-import Benefit1 from '~/img/Benefit1.png';
-import Benefit2 from '~/img/Benefit2.png';
+// import Arrow from '~/img/Arrow.png';
+// import Benefit1 from '~/img/Benefit1.png';
+// import Benefit2 from '~/img/Benefit2.png';
 
 export const storyList: { [key: string]: BenefitProps } = {
   default: {
@@ -11,19 +11,19 @@ export const storyList: { [key: string]: BenefitProps } = {
     cards: [
       {
         text: '仲間',
-        icon: {
-          src: Arrow,
-          alt: 'arrow',
-          width: 30,
-          height: 30,
-        },
+        // icon: {
+        //   src: Arrow,
+        //   alt: 'arrow',
+        //   width: 30,
+        //   height: 30,
+        // },
         result: 'モチベーション',
-        image: {
-          src: Benefit1,
-          alt: 'benefit1',
-          width: 315,
-          height: 315,
-        },
+        // image: {
+        //   src: Benefit1,
+        //   alt: 'benefit1',
+        //   width: 315,
+        //   height: 315,
+        // },
         message: {
           msg1: '熱量の高い',
           msg2: '最高の仲間と切磋琢磨',
@@ -31,19 +31,19 @@ export const storyList: { [key: string]: BenefitProps } = {
       },
       {
         text: '目的',
-        icon: {
-          src: Arrow,
-          alt: 'arrow',
-          width: 30,
-          height: 30,
-        },
+        // icon: {
+        //   src: Arrow,
+        //   alt: 'arrow',
+        //   width: 30,
+        //   height: 30,
+        // },
         result: '能力',
-        image: {
-          src: Benefit2,
-          alt: 'benefit2',
-          width: 315,
-          height: 315,
-        },
+        // image: {
+        //   src: Benefit2,
+        //   alt: 'benefit2',
+        //   width: 315,
+        //   height: 315,
+        // },
         message: {
           msg1: 'プロレベルで必要な',
           msg2: '技術ロードマップを網羅',

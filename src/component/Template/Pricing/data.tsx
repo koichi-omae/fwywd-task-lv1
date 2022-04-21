@@ -1,8 +1,5 @@
 import { PricingProps } from '.';
 
-import Check from '~/img/Check.png';
-import NotCheck from '~/img/NotCheck.png';
-
 export const storyList: { [key: string]: PricingProps } = {
   default: {
     title: '料金',
@@ -32,8 +29,7 @@ export const storyList: { [key: string]: PricingProps } = {
         courses: [
           {
             icon: {
-              src: Check,
-              alt: 'check',
+              type: 'check',
               width: 28,
               height: 25,
             },
@@ -41,8 +37,7 @@ export const storyList: { [key: string]: PricingProps } = {
           },
           {
             icon: {
-              src: Check,
-              alt: 'check',
+              type: 'check',
               width: 28,
               height: 25,
             },
@@ -50,8 +45,7 @@ export const storyList: { [key: string]: PricingProps } = {
           },
           {
             icon: {
-              src: Check,
-              alt: 'check',
+              type: 'check',
               width: 28,
               height: 25,
             },
@@ -59,8 +53,7 @@ export const storyList: { [key: string]: PricingProps } = {
           },
           {
             icon: {
-              src: NotCheck,
-              alt: 'notcheck',
+              type: 'notCheck',
               width: 28,
               height: 25,
             },
@@ -70,8 +63,7 @@ export const storyList: { [key: string]: PricingProps } = {
         onlines: [
           {
             icon: {
-              src: Check,
-              alt: 'check',
+              type: 'check',
               width: 28,
               height: 25,
             },
@@ -79,8 +71,7 @@ export const storyList: { [key: string]: PricingProps } = {
           },
           {
             icon: {
-              src: Check,
-              alt: 'check',
+              type: 'check',
               width: 28,
               height: 25,
             },
@@ -111,8 +102,7 @@ export const storyList: { [key: string]: PricingProps } = {
         courses: [
           {
             icon: {
-              src: Check,
-              alt: 'check',
+              type: 'check',
               width: 28,
               height: 25,
             },
@@ -120,8 +110,7 @@ export const storyList: { [key: string]: PricingProps } = {
           },
           {
             icon: {
-              src: Check,
-              alt: 'check',
+              type: 'check',
               width: 28,
               height: 25,
             },
@@ -129,8 +118,7 @@ export const storyList: { [key: string]: PricingProps } = {
           },
           {
             icon: {
-              src: Check,
-              alt: 'check',
+              type: 'check',
               width: 28,
               height: 25,
             },
@@ -138,8 +126,7 @@ export const storyList: { [key: string]: PricingProps } = {
           },
           {
             icon: {
-              src: NotCheck,
-              alt: 'notcheck',
+              type: 'notCheck',
               width: 28,
               height: 25,
             },
@@ -149,8 +136,7 @@ export const storyList: { [key: string]: PricingProps } = {
         onlines: [
           {
             icon: {
-              src: Check,
-              alt: 'check',
+              type: 'check',
               width: 28,
               height: 25,
             },
@@ -158,8 +144,7 @@ export const storyList: { [key: string]: PricingProps } = {
           },
           {
             icon: {
-              src: NotCheck,
-              alt: 'notcheck',
+              type: 'notCheck',
               width: 28,
               height: 25,
             },
@@ -190,8 +175,7 @@ export const storyList: { [key: string]: PricingProps } = {
         courses: [
           {
             icon: {
-              src: Check,
-              alt: 'check',
+              type: 'check',
               width: 28,
               height: 25,
             },
@@ -199,8 +183,7 @@ export const storyList: { [key: string]: PricingProps } = {
           },
           {
             icon: {
-              src: Check,
-              alt: 'check',
+              type: 'check',
               width: 28,
               height: 25,
             },
@@ -208,8 +191,7 @@ export const storyList: { [key: string]: PricingProps } = {
           },
           {
             icon: {
-              src: Check,
-              alt: 'check',
+              type: 'check',
               width: 28,
               height: 25,
             },
@@ -217,8 +199,7 @@ export const storyList: { [key: string]: PricingProps } = {
           },
           {
             icon: {
-              src: Check,
-              alt: 'check',
+              type: 'check',
               width: 28,
               height: 25,
             },
@@ -228,8 +209,7 @@ export const storyList: { [key: string]: PricingProps } = {
         onlines: [
           {
             icon: {
-              src: Check,
-              alt: 'check',
+              type: 'check',
               width: 28,
               height: 25,
             },
@@ -237,8 +217,7 @@ export const storyList: { [key: string]: PricingProps } = {
           },
           {
             icon: {
-              src: NotCheck,
-              alt: 'notcheck',
+              type: 'notCheck',
               width: 28,
               height: 25,
             },
@@ -250,8 +229,7 @@ export const storyList: { [key: string]: PricingProps } = {
     checklist: [
       {
         icon: {
-          src: Check,
-          alt: 'check',
+          type: 'check',
           width: 28,
           height: 25,
         },
@@ -259,8 +237,7 @@ export const storyList: { [key: string]: PricingProps } = {
       },
       {
         icon: {
-          src: Check,
-          alt: 'check',
+          type: 'check',
           width: 28,
           height: 25,
         },
@@ -268,8 +245,7 @@ export const storyList: { [key: string]: PricingProps } = {
       },
       {
         icon: {
-          src: Check,
-          alt: 'check',
+          type: 'check',
           width: 28,
           height: 25,
         },

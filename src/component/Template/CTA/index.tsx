@@ -1,15 +1,15 @@
 import Link from 'next/link';
 import React from 'react';
-import { Icon, IconProps } from '@/component/Atom/Icon/Icon';
+// import { Icon, IconProps } from '@/component/atom/Icon';
 export interface CtaProps {
   button: {
     text: string;
     link: string;
   };
-  icon: IconProps;
+  // icon: IconProps;
 }
 
-export const Cta: React.FC<CtaProps> = ({ button, icon }) => (
+export const Cta: React.FC<CtaProps> = ({ button }) => (
   <div className='flex items-center bg-gradient-to-r from-primary-800 to-primary-500  px-8'>
     <div className='w-1/2'>
       <h2 className='white-2xl text-center'>
@@ -24,9 +24,7 @@ export const Cta: React.FC<CtaProps> = ({ button, icon }) => (
       </div>
     </div>
     <div className='w-1/2 py-10'>
-      <div>
-        <Icon {...icon} />
-      </div>
+      <div>{/* <Icon {...icon} /> */}</div>
     </div>
   </div>
 );

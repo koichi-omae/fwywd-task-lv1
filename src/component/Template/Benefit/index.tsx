@@ -1,6 +1,6 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import React from 'react';
-import { Icon, IconProps } from '@/component/Atom/Icon/Icon';
+// import { Icon, IconProps } from '@/component/atom/Icon';
 
 export interface BenefitProps {
   title: string;
@@ -14,9 +14,9 @@ export interface BenefitProps {
 
 interface BenefitCardProps {
   text: string;
-  icon: IconProps;
+  // icon: IconProps;
   result: string;
-  image: IconProps;
+  // image: IconProps;
   message: {
     msg1: string;
     msg2: string;
@@ -37,18 +37,16 @@ export const Benefit: React.FC<BenefitProps> = ({ title, result, cards, message 
         >
           <p className='primary-base mb-10'>{card.text}</p>
           <div className='mb-5'>
-            <Image
+            {/* <Image
               src={card.icon.src}
               alt={card.icon.alt}
               width={card.icon.width}
               height={card.icon.height}
               className='rotate-90'
-            />
+            /> */}
           </div>
           <p className='underline-lg inline-block'>{card.result}</p>
-          <div className='my-6'>
-            <Icon {...card.image} />
-          </div>
+          <div className='my-6'>{/* <Icon {...card.image} /> */}</div>
           <p className='primary-base text-center'>{card.message.msg1}</p>
           <p className='primary-base text-center'>{card.message.msg2}</p>
         </div>

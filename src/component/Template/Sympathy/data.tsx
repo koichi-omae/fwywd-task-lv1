@@ -1,6 +1,5 @@
 import { SympathyProps } from '.';
 
-import Check from '~/img/Check.png';
 import Sympathy1 from '~/img/Sympathy1.png';
 import Sympathy2 from '~/img/Sympathy2.png';
 
@@ -9,15 +8,15 @@ export const storyList: { [key: string]: SympathyProps } = {
     title: '夢を叶える仲間が欲しい、あなたへ',
     checklist: [
       {
-        icon: { src: Check, alt: 'check', width: 28, height: 25 },
+        icon: { type: 'check', width: 28, height: 25 },
         text: '新しいことを始めたい気持ちは強い',
       },
       {
-        icon: { src: Check, alt: 'check', width: 28, height: 25 },
+        icon: { type: 'check', width: 28, height: 25 },
         text: '学びに必要な教材がたくさんあることは知っている',
       },
       {
-        icon: { src: Check, alt: 'check', width: 28, height: 25 },
+        icon: { type: 'check', width: 28, height: 25 },
         text: '最後のひと押しの勇気が欲しい',
       },
     ],
@@ -28,7 +27,7 @@ export const storyList: { [key: string]: SympathyProps } = {
           title1: '仲間',
           title2: 'がいない',
         },
-        icon: {
+        image: {
           src: Sympathy1,
           alt: 'sympath1',
           width: 315,
@@ -42,7 +41,7 @@ export const storyList: { [key: string]: SympathyProps } = {
           title1: '目的',
           title2: 'があいまい',
         },
-        icon: {
+        image: {
           src: Sympathy2,
           alt: 'sympath2',
           width: 315,
