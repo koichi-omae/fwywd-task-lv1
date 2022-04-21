@@ -1,104 +1,59 @@
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-import React from 'react';
-
-import { Text } from './Text';
+import { ComponentMeta, Story } from '@storybook/react';
+import { Text, TextProps } from './Text';
 
 export default {
   title: 'atom/Text',
   component: Text,
 } as ComponentMeta<typeof Text>;
 
-const Template: ComponentStory<typeof Text> = (args) => <Text {...args} />;
+const Template: Story<TextProps> = (args) => <Text {...args} />;
 
-//Primary Text
-export const PrimaryExtraSmall = Template.bind({});
-PrimaryExtraSmall.args = {
-  children: <span className='primary-xs'>Text-xs</span>,
+export const Primary = Template.bind({});
+Primary.args = {
+  children: <span className='text-primary-800'>text-primary-800</span>,
 };
 
-export const PrimarySmall = Template.bind({});
-PrimarySmall.args = {
-  children: <span className='primary-sm'>Text-sm</span>,
+export const Highlight = Template.bind({});
+Highlight.args = {
+  children: <span className='highlight text-primary-800'>text-primary-800 highlight</span>,
 };
 
-export const PrimaryBase = Template.bind({});
-PrimaryBase.args = {
-  children: <span className='primary-base'>Text-base</span>,
+export const Black = Template.bind({});
+Black.args = {
+  children: <span className='text-black'>text-black</span>,
 };
 
-export const PrimaryLarge = Template.bind({});
-PrimaryLarge.args = {
-  children: <span className='primary-lg'>Text-lg</span>,
+export const White = Template.bind({});
+White.args = {
+  children: <span className='text-white'>text-white</span>,
 };
 
-export const PrimaryExtraLarge = Template.bind({});
-PrimaryExtraLarge.args = {
-  children: <span className='primary-xl'>Text-xl</span>,
+export const ExtraSmall = Template.bind({});
+ExtraSmall.args = {
+  children: <span className='text-xs'>text-xs</span>,
 };
 
-export const PrimaryExtraLarge2 = Template.bind({});
-PrimaryExtraLarge2.args = {
-  children: <span className='primary-2xl'>Text-2xl</span>,
+export const Small = Template.bind({});
+Small.args = {
+  children: <span className='text-sm'>text-sm</span>,
 };
 
-//Gray Text
-export const GrayExtraSmall = Template.bind({});
-GrayExtraSmall.args = {
-  children: <span className='gray-xs'>Text-xs</span>,
+export const Base = Template.bind({});
+Base.args = {
+  children: <span className='text-base'>text-base</span>,
 };
 
-export const GraySmall = Template.bind({});
-GraySmall.args = {
-  children: <span className='gray-sm'>Text-sm</span>,
+export const Large = Template.bind({});
+Large.args = {
+  children: <span className='text-lg'>text-lg</span>,
 };
 
-export const GrayBase = Template.bind({});
-GrayBase.args = {
-  children: <span className='gray-base'>Text-base</span>,
+export const ExtraLarge = Template.bind({});
+ExtraLarge.args = {
+  children: <span className='text-xl'>text-xl</span>,
 };
 
-export const GrayLarge = Template.bind({});
-GrayLarge.args = {
-  children: <span className='gray-lg'>Text-lg</span>,
-};
-
-export const GrayExtraLarge = Template.bind({});
-GrayExtraLarge.args = {
-  children: <span className='gray-xl'>Text-xl</span>,
-};
-
-export const GrayExtraLarge2 = Template.bind({});
-GrayExtraLarge2.args = {
-  children: <span className='gray-2xl'>Text-2xl</span>,
-};
-
-//white Text
-export const WhiteExtraSmall = Template.bind({});
-WhiteExtraSmall.args = {
-  children: <span className='white-xs'>Text-xs</span>,
-};
-
-export const WhiteSmall = Template.bind({});
-WhiteSmall.args = {
-  children: <span className='white-sm'>Text-sm</span>,
-};
-
-export const WhiteBase = Template.bind({});
-WhiteBase.args = {
-  children: <span className='white-base'>Text-base</span>,
-};
-
-export const WhiteLarge = Template.bind({});
-WhiteLarge.args = {
-  children: <span className='white-lg'>Text-lg</span>,
-};
-
-export const WhiteExtraLarge = Template.bind({});
-WhiteExtraLarge.args = {
-  children: <span className='white-xl'>Text-xl</span>,
-};
-
-export const WhiteExtraLarge2 = Template.bind({});
-WhiteExtraLarge2.args = {
-  children: <span className='white-2xl'>Text-2xl</span>,
+export const ExtraLarge2 = Template.bind({});
+ExtraLarge2.args = {
+  children: <span className='text-2xl'>text-2xl</span>,
 };
