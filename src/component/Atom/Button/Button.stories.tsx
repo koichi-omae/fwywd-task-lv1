@@ -1,21 +1,19 @@
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-import React from 'react';
-
-import { Button } from './Button';
+import { ComponentMeta, Story } from '@storybook/react';
+import { Button, ButtonProps } from './Button';
 
 export default {
   title: 'atom/Button',
   component: Button,
 } as ComponentMeta<typeof Button>;
 
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
 export const Green = Template.bind({});
 Green.args = {
-  children: <span className='btn-green'>button</span>,
+  children: <span className='btn btn-green'>btn btn-green</span>,
 };
 
 export const Yellow = Template.bind({});
 Yellow.args = {
-  children: <span className='btn-yellow'>button</span>,
+  children: <span className='btn btn-yellow'>btn btn-yellow</span>,
 };

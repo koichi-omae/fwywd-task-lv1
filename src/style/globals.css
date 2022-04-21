@@ -2,12 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.btn {
+  @apply rounded-md py-5 px-12 text-base text-white hover:opacity-70;
+}
+
 .btn-green {
-  @apply rounded-md bg-gradient-to-r from-primary-800 to-primary-500 py-5 px-12 text-base text-white hover:opacity-70;
+  @apply bg-gradient-to-r from-primary-800 to-primary-500;
 }
 
 .btn-yellow {
-  @apply rounded-md bg-gradient-to-r from-[#F2994A] to-[#F2C94C] py-5 px-12 text-base text-white hover:opacity-70;
+  @apply bg-gradient-to-r from-[#F2994A] to-[#F2C94C];
 }
 
 .highlight {
