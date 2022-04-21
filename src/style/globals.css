@@ -23,5 +23,5 @@
 }
 
 .tag-green {
-  @apply text-sm font-bold text-white;
+  @apply bg-primary-800 text-sm font-bold text-white;
 }
