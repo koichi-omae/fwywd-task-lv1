@@ -1,10 +1,9 @@
 import Link from 'next/link';
 import React from 'react';
 import { Link as Scroll } from 'react-scroll';
-import { Logo, LogoProps } from '@/component/Atom/Logo/Logo';
+import { Icon } from '@/component/atom/Icon';
 
 export interface PageHeaderProps {
-  logo: LogoProps;
   headerList: string[];
   button: {
     text: string;
@@ -12,14 +11,14 @@ export interface PageHeaderProps {
   };
 }
 
-export const PageHeader: React.FC<PageHeaderProps> = ({ logo, headerList, button }) => (
+export const PageHeader: React.FC<PageHeaderProps> = ({ headerList, button }) => (
   <>
     <header className='bg-primary-800 px-9'>
       <div className='flex items-center justify-between'>
         <Link href='/' passHref>
           <a>
             <div className='hover:cursor-pointer hover:opacity-70'>
-              <Logo {...logo} />
+              <Icon type='logo' width={156} height={60} />
             </div>
           </a>
         </Link>
